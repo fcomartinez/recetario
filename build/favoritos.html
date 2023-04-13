@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetario | Favoritos</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <header>
+        <div class="bg-black p-2 text-center">
+            <div class="container">
+                <div class="aviso d-md-flex gap-md-3 align-items-md-center justify-content-md-center">
+                    <p class="text-white text-uppercase fw-bold fs-5 m-0">Nuevas recetas todo el año</p>
+                    <a href="#"><span class="badge rounded-pill text-bg-light">Ver Recientes</span></a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-md bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/brand.svg" alt="imagen logo" class="imagen-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="recetas.html">Recetas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="favoritos.html">Favoritos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="bg-dark">
+        <div class="container text-white">
+            <div id="favoritos" class="row py-5 gy-3"></div>
+        </div>
+    </main>
+    <div class="modal fade" id="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-3 font-bold" id="staticBackdropLabel"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body"></div>
+                <div class="modal-footer flex justify-content-between"></div>
+            </div>
+        </div>
+    </div>
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Recetario</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body"></div>
+        </div>
+    </div>
+    <footer class="bg-light">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12 col-md-4 my-3">
+                    <h3 class="text-uppercase border-top border-dark border-2 pt-3 m-3">Recetario</h3>
+                    <nav class="d-flex flex-column align-items-center">
+                        <ul class="navbar-nav">
+                            <li class="px-0 fw-semibold">
+                                <a class="nav-link" href="index.html">Incio</a>
+                            </li>
+                            <li class="px-0 fw-semibold">
+                                <a class="nav-link disabled" href="recetas.html">Recetas</a>
+                            </li>
+                            <li class="px-0 fw-semibold">
+                                <a class="nav-link" href="favoritos.html">Favoritos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-12 col-md-4 my-3">
+                    <h3 class="text-uppercase border-top border-dark border-2 pt-3 m-3">Nosotros</h3>
+                    <nav class="d-flex flex-column align-items-center">
+                        <ul class="navbar-nav">
+                            <li class="px-0 fw-semibold">
+                                <a class="nav-link" href="#">Misión</a>
+                            </li>
+                            <li class="px-0 fw-semibold">
+                                <a class="nav-link" href="#">Visión</a>
+                            </li>
+                            <li class="px-0 fw-semibold">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-12 col-md-4 my-3">
+                    <h3 class="text-uppercase border-top border-dark border-2 pt-3 m-3">Historia</h3>
+                    <p class="text-md-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident nobis
+                        maiores voluptatem beatae dignissimos quam expedita incidunt facilis error consectetur.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/favoritos.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+
+.hero {
+    padding: 6rem 0 4rem 0;
+    background-image: linear-gradient(to right, transparentize(#000,.4) 0%, transparentize(#000,.4) 100%), url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (min-width: 768px) {
+        padding: 8rem 0 5rem 0;
+    }
+}

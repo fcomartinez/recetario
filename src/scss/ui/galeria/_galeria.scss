@@ -1,0 +1,11 @@
+.galeria {
+    .carousel {
+        max-width: 70rem;
+    }
+
+    .imagen-carousel {
+        object-fit: cover;
+        object-position: center;
+        aspect-ratio: 16/9;
+    }
+}

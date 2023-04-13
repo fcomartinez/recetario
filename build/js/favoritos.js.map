@@ -1,0 +1,1 @@
+{"version":3,"sources":["favoritos.js"],"names":["obtenerFavoritos","jQuery"],"mappings":"OAASA,qBAAwB,iBAEjCC,QAAO,WACHD","file":"favoritos.js","sourcesContent":["import { obtenerFavoritos } from \"./funciones.js\";\r\n\r\njQuery(function() { \r\n    obtenerFavoritos();\r\n});"]}

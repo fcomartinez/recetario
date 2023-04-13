@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetario | Inicio</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <header>
+        <div class="bg-black p-2 text-center">
+            <div class="container">
+                <div class="aviso d-md-flex gap-md-3 align-items-md-center justify-content-md-center">
+                    <p class="text-white text-uppercase fw-bold fs-5 m-0">Nuevas recetas todo el año</p>
+                    <a href="#"><span class="badge rounded-pill text-bg-light">Ver Recientes</span></a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-md bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/brand.svg" alt="imagen logo" class="imagen-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="recetas.html">Recetas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="favoritos.html">Favoritos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="row text-center text-white">
+                <div class="col-12">
+                    <h1 class="text-uppercase fw-bolder">Recetario</h1>
+                </div>
+                <div class="col-12">
+                    <p class="fs-3 fw-semibold mt-5">Encuentra tu nueva receta favorita</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bienvenida bg-light">
+        <div class="informacion mx-auto py-5 text-center">
+            <h2 class="mb-4 text-uppercase">Navega entre las diferentes opciones de platillos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus cum dolor inventore quo autem amet dolore
+                suscipit doloremque consequatur laborum iusto veniam, vel, soluta eveniet sit ipsum aut dolores
+                voluptas!</p>
+        </div>
+    </section>
+    <section class="galeria bg-dark py-3">
+        <div id="carousel" class="carousel slide carousel-dark mx-auto" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/platillo-1.jpg" class="d-block w-100 imagen-carousel" alt="imagen platillo">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/platillo-2.jpg" class="d-block w-100 imagen-carousel" alt="imagen platillo">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/platillo-3.jpg" class="d-block w-100 imagen-carousel" alt="imagen platillo">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/platillo-4.jpg" class="d-block w-100 imagen-carousel" alt="imagen platillo">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/platillo-5.jpg" class="d-block w-100 imagen-carousel" alt="imagen platillo">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/platillo-6.jpg" class="d-block w-100 imagen-carousel" alt="imagen platillo">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+        </div>
+    </section>
+    <main class="bg-light">
+        <div class="container py-4 platillo">
+            <h2 class="text-uppercase text-center">Platillo recomendado</h2>
+            <div id="platillo-random" class="contendor-card mx-auto"></div>
+        </div>
+    </main>
+    <div class="modal fade" id="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-3 font-bold" id="staticBackdropLabel"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body"></div>
+                <div class="modal-footer flex justify-content-between"></div>
+            </div>
+        </div>
+    </div>
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Recetario</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body"></div>
+        </div>
+    </div>
+    <section class="newsletter bg-dark">
+        <div class="container text-center text-white">
+            <h2 class="text-uppercase py-3">Newsletter</h2>
+            <div class="row align-items-center justify-content-center pb-4">
+                <div class="col-12 col-md-6">
+                    <img class="imagen rounded-5 shadow" src="img/newsletter.jpg" alt="imagen newsletter">
+                </div>
+                <div class="col-12 col-md-6">
+                    <button id="btn-suscription" type="button" class="btn btn-lg btn-secondary my-4">Suscríbete</button>
+                    <form id="form-suscription">
+                        <div class="input-group">
+                            <span class="input-group-text">Email</span>
+                            <input class="form-control" type="email" placeholder="Email">
+                            <input class="btn btn-success" type="submit" value="Enviar" id="btn-newsletter">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-light">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12 col-md-4 my-3">
+                    <h3 class="text-uppercase border-top border-dark border-2 pt-3 m-3">Recetario</h3>
+                    <nav class="d-flex flex-column align-items-center">
+                        <ul class="navbar-nav">
+                            <li class="px-0 fw-semibold">
+                                <a class="nav-link" href="index.html">Incio</a>
+                            </li>
+                            <li class="px-0 fw-semibold">
+                                <a class="nav-link disabled" href="recetas.html">Recetas</a>
+                            </li>
+                            <li class="px-0 fw-semibold">
+                                <a class="nav-link" href="favoritos.html">Favoritos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-12 col-md-4 my-3">
+                    <h3 class="text-uppercase border-top border-dark border-2 pt-3 m-3">Nosotros</h3>
+                    <nav class="d-flex flex-column align-items-center">
+                        <ul class="navbar-nav">
+                            <li class="px-0 fw-semibold">
+                                <a class="nav-link" href="#">Misión</a>
+                            </li>
+                            <li class="px-0 fw-semibold">
+                                <a class="nav-link" href="#">Visión</a>
+                            </li>
+                            <li class="px-0 fw-semibold">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-12 col-md-4 my-3">
+                    <h3 class="text-uppercase border-top border-dark border-2 pt-3 m-3">Historia</h3>
+                    <p class="text-md-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident nobis
+                        maiores voluptatem beatae dignissimos quam expedita incidunt facilis error consectetur.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js" type="module"></script>
+</body>
+
+</html>
